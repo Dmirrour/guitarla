@@ -25,6 +25,7 @@ function App() {
         <div className="row mt-5">
             {data.map((guitarra)=>(
               <Guitar 
+              key={guitarra.id}
               info={guitarra}
               />
             ))}
