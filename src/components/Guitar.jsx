@@ -1,4 +1,6 @@
-export default function Guitar({info}){
+export default function Guitar({info,setCart}){
+    
+
 
     return(
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">
@@ -12,6 +14,7 @@ export default function Guitar({info}){
                 <button 
                     type="button"
                     className="btn btn-dark w-100"
+                    onClick={()=> setCart(prevCart => [...prevCart, info])}
                 >Agregar al Carrito</button>
             </div>
         </div>

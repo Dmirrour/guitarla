@@ -27,6 +27,7 @@ function App() {
               <Guitar 
               key={guitarra.id}
               info={guitarra}
+              setCart={setCart}
               />
             ))}
         </div>
